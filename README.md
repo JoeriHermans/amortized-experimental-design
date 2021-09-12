@@ -1,4 +1,4 @@
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JoeriHermans/amortized-experimental-design/HEAD)
 
 ## The idea
 
@@ -11,3 +11,6 @@ We seek to obtain the experimental configuration which maximizes the utility: <i
 
 **Problem**: for every evaluation of the utility, the simulator needs to be called because the
 expectation depends on  <img src="https://render.githubusercontent.com/render/math?math=p(\vartheta,x\vert\psi)">. Slow and cumbersome!
+
+**Proposal:** Reweight the samples from the joint to approximate <img src="https://render.githubusercontent.com/render/math?math=\mathbb{E}_{p(\vartheta,x\vert\psi)}\left[\log\frac{p(\vartheta\vert x,\psi)}{p(\vartheta)}\right]"> with several ratio estimators that can be trained on samples from the joint alone!
+In doing so, we can estimate the EIG for every experimental configuration by reusing presimulated samples for specific experimental configurations. For more details check the notebook!
