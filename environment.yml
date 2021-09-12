@@ -1,0 +1,20 @@
+name: amortized-ed
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.8.0
+  - cudatoolkit=11
+  - pytorch==1.7.0
+  - jupyterlab
+  - pip
+  - torchvision
+  - matplotlib
+  - pip:
+    - git+https://github.com/montefiore-ai/hypothesis.git@4aa2a683ea43e90e135b27c0ca5c380d92e48a08
+    - git+https://github.com/AWehenkel/Normalizing-Flows
+    - sklearn
+    - cloudpickle
+    - palettable
+    - papermill
