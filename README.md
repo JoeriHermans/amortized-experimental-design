@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JoeriHermans/amortized-experimental-design/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JoeriHermans/amortized-experimental-design/master)
 
 ## The idea
 
